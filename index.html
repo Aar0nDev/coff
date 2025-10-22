@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EON Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>EON Coffee Shop</h1>
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#freewall" class="nav-link">Free Wall</a>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn">Login</button>
+                <button id="registerBtn" class="btn">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <div>
+                <h2>Brewing Happiness, One Cup at a Time</h2>
+                <p>Welcome to EON Coffee Shop — where premium beans meet expert brewing in a cozy, inviting space.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Why Choose EON Coffee Shop?</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-seedling fa-3x text-accent mb-3"></i>
+                    <h3>Freshly Roasted Beans</h3>
+                    <p>We source the best coffee beans and roast them to perfection for the ultimate flavor.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user-tie fa-3x text-accent mb-3"></i>
+                    <h3>Expert Baristas</h3>
+                    <p>Our skilled baristas craft every cup with precision and passion.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-home fa-3x text-accent mb-3"></i>
+                    <h3>Cozy Ambience</h3>
+                    <p>Relax in our warm and welcoming space, perfect for any occasion.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Our Café in Pictures</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Shop Interior">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Coffee Cup">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cafe Counter">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cold Brew">
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>Visit Us Today</h2>
+            <p>Experience the rich aroma and taste of EON Coffee Shop in person or order online for quick delivery.</p>
+            <button class="btn" onclick="showSection('menu')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="hero">
+            <div>
+                <h2>Our Premium Menu</h2>
+                <p>Discover our carefully crafted selection of coffee, beverages, and pastries.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="category-filters">
+                <button class="btn category-btn active" data-category="all">All Items</button>
+                <button class="btn category-btn" data-category="1">Hot Drinks</button>
+                <button class="btn category-btn" data-category="2">Cold Drinks</button>
+                <button class="btn category-btn" data-category="3">Pastries</button>
+                <button class="btn category-btn" data-category="4">Snacks</button>
+            </div>
+
+            <div id="menu-grid" class="menu-grid">
+                <!-- Menu items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="hero">
+            <div>
+                <h2>About EON Coffee Shop</h2>
+                <p>Discover our story, our passion, and our commitment to exceptional coffee.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Our Story</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                EON Coffee Shop was born from a simple dream: to create a space where coffee lovers 
+                could gather, relax, and enjoy the perfect cup of coffee. Founded in 2020, we have 
+                been dedicated to sourcing the finest coffee beans from around the world and crafting 
+                each cup with love and precision.
+            </p>
+            
+            <h3 class="text-accent mb-3">Our Mission</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                We believe that great coffee brings people together. Our mission is to provide 
+                an exceptional coffee experience that creates lasting memories and builds community 
+                connections. Every cup we serve is a testament to our commitment to quality, 
+                sustainability, and customer satisfaction.
+            </p>
+
+            <h3 class="text-accent mb-3">Our Values</h3>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-leaf fa-3x text-accent mb-3"></i>
+                    <h4>Sustainability</h4>
+                    <p>We source our beans from sustainable farms and use eco-friendly practices in our operations.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart fa-3x text-accent mb-3"></i>
+                    <h4>Community</h4>
+                    <p>We're more than just a coffee shop - we're a gathering place for our local community.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star fa-3x text-accent mb-3"></i>
+                    <h4>Quality</h4>
+                    <p>Every cup is crafted with the highest standards and attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="hero" style="background-image: url('https://images.adsttc.com/media/images/632d/9d4a/422f/0701/6e1f/64ae/newsletter/paisagismo-em-cafeterias-10-projetos-que-integram-o-verde-a-arquitetura_2.jpg?1663933782'); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
+            <div>
+                <h2>Let's Brew Up a Conversation</h2>
+                <p>We'd love to hear from you! Get in touch with us.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:aaronmalana88@gmail.com">aaronmalana88@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +63 912 345 6789</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Purok 3 Mamatid Cabuyao Laguna</p>
+                    
+                    <div class="social-icons">
+                        <h5>Follow Us</h5>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Wall Section -->
+    <section id="freewall" class="section">
+        <div class="hero">
+            <div>
+                <h2>Free Wall</h2>
+                <p>Share your thoughts with the world! Leave a message and it will be displayed here.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="freewall-container">
+                <div class="post-form">
+                    <h3>Post Your Message</h3>
+                    <form id="freewallForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn">Post Message</button>
+                    </form>
+                </div>
+
+                <div class="messages-container">
+                    <h3>All Messages</h3>
+                    <div id="messages-list">
+                        <!-- Messages will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EON Coffee Shop | All Rights Reserved</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeRegister">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeOrder">&times;</span>
+            <h2>Confirm Your Order</h2>
+            <div id="order-content">
+                <!-- Order details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

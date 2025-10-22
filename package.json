@@ -1,0 +1,28 @@
+{
+  "name": "eon-coffee-shop",
+  "version": "1.0.0",
+  "description": "EON Coffee Shop - Modern Coffee Shop Website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "mysql2": "^3.6.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
